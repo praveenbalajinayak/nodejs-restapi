@@ -39,6 +39,8 @@ app.get('/', function(req,res){
 app.use("/", usersRoutes);
 
 
-app.listen(9099, ()=>{
-    console.log('App will run on http://localhost:9099')
+app.listen(9098, ()=>{
+    console.log('App will run on http://localhost:9098')
 })
+
+

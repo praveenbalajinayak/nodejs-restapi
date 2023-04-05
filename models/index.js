@@ -3,7 +3,7 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
 
 const sequelize = new Sequelize('likhith', 'root', 'PRaveen@123', {
-    host: 'localhost',
+    host: '127.0.0.1',
     logging : false,
     dialect: 'mysql'
   });
