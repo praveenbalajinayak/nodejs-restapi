@@ -2,11 +2,17 @@
 //const { Sequelize, Datatypes,Model }  = require('sequelize');
 const { Sequelize, DataTypes, Model } = require('sequelize');
 
-const sequelize = new Sequelize('likhith', 'root', 'PRaveen@123', {
-    host: '127.0.0.1',
+const sequelize = new Sequelize('my_db', 'root', 'PRaveen123', {
+    host: 'database-1.cln6eumkbt27.eu-north-1.rds.amazonaws.com',
     logging : false,
-    dialect: 'mysql'
+    dialect: 'mysql',
+    dialectOptions: {
+      ssl: 'Amazon RDS'
+    }
   });
+
+
+  
 
   try {
      sequelize.authenticate();
